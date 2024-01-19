@@ -3,11 +3,12 @@
     padding: 0;
 }
 body{
-    background-color: white;
-    overflow: scroll;
+    background: linear-gradient(180deg,white,skyblue,white);
+    overflow: hidden;
 }
-.container{
-    border: 2px solid red;
+.container{ 
+    border: 2px solid skyblue;
+    border-radius: 7px;
     width: 90%;
     height: fit-content;
     margin: 1.5em auto;
@@ -22,9 +23,76 @@ body{
 .heading > h1{  
     font-size: 3em;
 }
+h2,h3{
+    font-size: 1.4em;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-radius: 7px;
+}
 .heading > img{
     border-radius: 50%;
 }
-.navs{
-    border: 2px solid red;
+.navs{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 1.4em auto;
+}
+.navs > button{
+    font-size: 1.2em;
+    font-family:sans-serif;
+    padding: 4px;
+    cursor: pointer;
+    background-color:  skyblue;
+    border-radius: 5px; 
+    border-bottom:3px solid black ;
+    border-right:3px solid black  ;
+    border-top: 3px solid white;
+    border-left:3px solid white; 
+    color: rgb(7, 5, 27);
+    margin-top: 4px;
+    transition: opacity 0.3s ease-in-out;
+}
+.navs > button:hover{ 
+    opacity :0.7; 
+    background-color: white;
+
+}
+#body{  
+    border: 3px solid white;
+    width: 80%;
+    margin: 1.2em auto;
+    height: 350px; 
+    overflow: scroll; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 9px;
+
+}
+#body > button{ 
+    width: 17em;
+    height: 100px;
+    margin-left: 7px;
+    margin-top: 7px ;
+    transition: opacity 0.3s ease-in-out;
+    background:linear-gradient(90deg,skyblue, white );
+    border-radius: 5px;
+}
+#body > button:hover{
+    opacity: 0.7;
+}
+#body > button > div > img{
+    background-size: 20px;
+}
+#body > button > div > p{
+    font-size: 1.2em;
 }
